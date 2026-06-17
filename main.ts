@@ -1,4 +1,4 @@
-//% block="UScreen" color="#ea2d29ff" weight=100 icon="\u00a"
+//% block="UScreen" color="#ea2d29" weight=100 icon="\uf00a"
 namespace UScreen {
 
      /**
