@@ -1,0 +1,4 @@
+{
+  "UScreen.isOnScreen": "Compares the image on the screen with another image.",
+  "UScreen.isOnScreen|param|i": "the Image to compare to"
+}

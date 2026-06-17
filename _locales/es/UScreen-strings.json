@@ -1,0 +1,5 @@
+{
+  "UScreen.isOnScreen|block": "está en pantalla $i",
+  "UScreen|block": "UScreen",
+  "{id:category}UScreen": "UScreen"
+}
