@@ -1,5 +1,5 @@
 {
-    "name": "Screen",
+    "name": "UScreen",
     "description": "Utils to obtain what is on the screen",
     "dependencies": {
         "core": "*",
