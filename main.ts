@@ -3,14 +3,15 @@ namespace UScreen {
 
      /**
      * Compares the image on the screen with another image.
-     * @param i the Image to compare to
+     * @param il the Image to compare to
      */
     //% blockId=screen_is_on_screen
-    //% block="is on screen $i"
-    //% i.shadow="screen_image_picker"
+    //% block="is on screen $il"
+    //% il.shadow="screen_image_picker"
     //% weight=99
-    export function isOnScreen(i: Image): boolean {
+    export function isOnScreen(il: string): boolean {
 
+        let i = images.createImage(il);
         if (i.pixel(0, 0) != led.point(0, 0)) return false;
         if (i.pixel(1, 0) != led.point(1, 0)) return false;
         if (i.pixel(2, 0) != led.point(2, 0)) return false;
