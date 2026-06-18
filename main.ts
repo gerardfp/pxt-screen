@@ -6,7 +6,7 @@ namespace SuperLED {
      * @param i the image to compare to
      */
     //% blockId=image_is_on_screen
-    //% block="is on screen $i"
+    //% block="is on screen"
     //% imageLiteral=1
     export function isOnScreen(i: string): boolean {
 
@@ -24,7 +24,7 @@ namespace SuperLED {
      * @param i the LEDs to randomly turn on
      */
     //% blockId=random_on
-    //% block="randomly turn on these LEDs $i"
+    //% block="randomly turn on these LEDs"
     //% imageLiteral=1
     export function setRandom(i: string): void {
         let im2 = <Image><any>i;
