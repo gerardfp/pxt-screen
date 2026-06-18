@@ -1,6 +1,6 @@
 {
     "name": "SuperLED",
-    "description": "Utils to obtain what is on the screen",
+    "description": "Utils to work with the led screen",
     "dependencies": {
         "core": "*",
         "radio": "*",
