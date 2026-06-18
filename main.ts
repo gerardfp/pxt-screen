@@ -36,4 +36,40 @@ namespace SuperLED {
             }
         }
     }
+
+    /**
+     * Turns on the specified LEDs.
+     * @param i the LEDs to turn on
+     */
+    //% blockId=turn_on
+    //% block="turn on these LEDs"
+    //% imageLiteral=1
+    export function turnOn(i: string): void {
+        let im2 = <Image><any>i;
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n < 5; n++) {
+                if (im2.pixel(m,n)) {
+                    led.plot(m, n);
+                }
+            }
+        }
+    }
+
+    /**
+     * Turns off the specified LEDs.
+     * @param i the LEDs to turn off
+     */
+    //% blockId=turn_off
+    //% block="turn off these LEDs"
+    //% imageLiteral=1
+    export function turnOff(i: string): void {
+        let im2 = <Image><any>i;
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n < 5; n++) {
+                if (im2.pixel(m,n)) {
+                    led.unplot(m, n);
+                }
+            }
+        }
+    }
 }
