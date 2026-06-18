@@ -72,4 +72,65 @@ namespace SuperLED {
             }
         }
     }
+
+    /**
+     * Checks if all the specified LEDs are turned on.
+     * @param i the LEDs to check
+     */
+    //% blockId=are_on
+    //% block="are turned on these LEDs"
+    //% imageLiteral=1
+    export function areOn(i: string): boolean {
+        let im2 = <Image><any>i;
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n < 5; n++) {
+                if (im2.pixel(m, n) && !led.point(m, n)) {
+                    return false;
+                }
+            }
+        }
+        return true
+    }
+
+    /**
+     * Checks if all the specified LEDs are turned off.
+     * @param i the LEDs to check
+     */
+    //% blockId=are_off
+    //% block="are turned off these LEDs"
+    //% imageLiteral=1
+    export function areOff(i: string): boolean {
+        let im2 = <Image><any>i;
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n < 5; n++) {
+                if (im2.pixel(m, n) && led.point(m, n)) {
+                    return false;
+                }
+            }
+        }
+        return true
+    }
+
+    /**
+     * Toggles the specified LEDs.
+     * @param i the LEDs to toggle
+     */
+    //% blockId=toggle
+    //% block="toggle these LEDs"
+    //% imageLiteral=1
+    export function toggle(i: string): void {
+        let im2 = <Image><any>i;
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n < 5; n++) {
+                if (im2.pixel(m, n)) {
+                    if (led.point(m, n)) {
+                        led.unplot(m,n)
+                    } else {
+                        led.plot(m,n)
+                    }                   
+
+                }
+            }
+        }
+    }
 }

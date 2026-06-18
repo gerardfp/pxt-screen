@@ -1,6 +1,11 @@
 {
   "SuperLED.isOnScreen|block": "is on screen $i",
   "SuperLED.setRandom|block": "randomly turn on these LEDs $i",
+  "SuperLED.turnOn|block": "turn on these LEDs $i",
+  "SuperLED.turnOff|block": "turn off these LEDs $i",
+  "SuperLED.areOn|block": "are turned on these LEDs $i",
+  "SuperLED.areOff|block": "are turned off these LEDs $i",
+  "SuperLED.toggle|block": "toggle these LEDs $i",
   "SuperLED|block": "SuperLED",
   "{id:category}SuperLED": "SuperLED"
 }

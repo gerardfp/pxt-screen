@@ -2,5 +2,15 @@
   "SuperLED.isOnScreen": "Compares the image on the screen with another image.",
   "SuperLED.isOnScreen|param|i": "the image to compare to",
   "SuperLED.setRandom": "Randomly turns on the specified LEDs.",
-  "SuperLED.setRandom|param|i": "the LEDs to randomly turn on"
+  "SuperLED.setRandom|param|i": "the LEDs to randomly turn on",
+  "SuperLED.turnOn": "Turns on the specified LEDs.",
+  "SuperLED.turnOn|param|i": "the LEDs to turn on",
+  "SuperLED.turnOff": "Turns off the specified LEDs.",
+  "SuperLED.turnOff|param|i": "the LEDs to turn off",
+  "SuperLED.areOn": "Checks if all the specified LEDs are turned on.",
+  "SuperLED.areOn|param|i": "the LEDs to check",
+  "SuperLED.areOff": "Checks if all the specified LEDs are turned off.",
+  "SuperLED.areOff|param|i": "the LEDs to check",
+  "SuperLED.toggle": "Toggles the specified LEDs.",
+  "SuperLED.toggle|param|i": "the LEDs to toggle"
 }

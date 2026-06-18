@@ -2,5 +2,15 @@
   "SuperLED.isOnScreen": "Compara la imagen en la pantalla con otra imagen.",
   "SuperLED.isOnScreen|param|i": "la imagen para comparar",
   "SuperLED.setRandom": "Enciende aleatoriamente los leds especificados.",
-  "SuperLED.setRandom|param|i": "los leds para encender aleatoriamente"
+  "SuperLED.setRandom|param|i": "los leds para encender aleatoriamente",
+  "SuperLED.turnOn": "Enciende los leds especificados.",
+  "SuperLED.turnOn|param|i": "los leds para encender",
+  "SuperLED.turnOff": "Apaga los leds especificados.",
+  "SuperLED.turnOff|param|i": "los leds para apagar",
+  "SuperLED.areOn": "Comprueba si todos los leds especificados están encendidos.",
+  "SuperLED.areOn|param|i": "los leds para comprobar",
+  "SuperLED.areOff": "Comprueba si todos los leds especificados están apagados.",
+  "SuperLED.areOff|param|i": "los leds para comprobar",
+  "SuperLED.toggle": "Alterna los leds especificados.",
+  "SuperLED.toggle|param|i": "los leds para alternar"
 }
