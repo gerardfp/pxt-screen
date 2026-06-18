@@ -1,0 +1,5 @@
+﻿{
+  "SuperLED.isOnScreen|block": "is on screen $i",
+  "SuperLED|block": "SuperLED",
+  "{id:category}SuperLED": "SuperLED"
+}

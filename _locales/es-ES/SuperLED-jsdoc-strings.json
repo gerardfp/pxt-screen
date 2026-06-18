@@ -1,0 +1,4 @@
+﻿{
+  "SuperLED.isOnScreen": "Compara la imagen en la pantalla con otra imagen.",
+  "SuperLED.isOnScreen|param|i": "la imagen para comparar"
+}

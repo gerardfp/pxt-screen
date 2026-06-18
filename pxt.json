@@ -1,5 +1,5 @@
 {
-    "name": "UScreen",
+    "name": "SuperLED",
     "description": "Utils to obtain what is on the screen",
     "dependencies": {
         "core": "*",
