@@ -25,12 +25,11 @@ namespace SuperLED {
      */
     //% blockId=random_on
     //% block="randomly turn on these LEDs $leds"
-    //% imageLiteral=1
+    //% leds.shadow=screen_image_picker
     export function setRandom(leds: Image): void {
-        let im2 = leds;
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
-                if (im2.pixel(m,n) && Math.randomBoolean()) {
+                if (leds.pixel(m,n) && Math.randomBoolean()) {
                     led.plot(m, n);
                 }
             }
