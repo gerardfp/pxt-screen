@@ -26,6 +26,7 @@ namespace SuperLED {
     //% blockId=random_on
     //% block="randomly turn on these LEDs"
     //% imageLiteral=1
+    //% shim=images::createImage
     export function setRandom(leds: string): void {
         let im2 = <Image><any>leds;
         for (let m = 0; m < 5; m++) {
@@ -44,6 +45,7 @@ namespace SuperLED {
     //% blockId=turn_on
     //% block="turn on these LEDs"
     //% imageLiteral=1
+    //% shim=images::createImage
     export function turnOn(leds: string): void {
         let im2 = <Image><any>leds;
         for (let m = 0; m < 5; m++) {
