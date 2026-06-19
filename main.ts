@@ -7,11 +7,13 @@ namespace SuperLED {
      */
     //% blockId=random_on
     //% block="randomly turn on these LEDs"
-    //% leds.shadow="image"
-    export function setRandom(leds: Image): void {
+    //% leds.imageLiteral=1
+    export function setRandom(leds: string): void {
+        let im = <Image><any>leds;
+        
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
-                if (leds.pixel(m, n) && Math.randomBoolean()) {
+                if (im.pixel(m, n) && Math.randomBoolean()) {
                     led.plot(m, n);
                 }
             }
