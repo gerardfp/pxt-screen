@@ -2,6 +2,16 @@
 namespace SuperLED {
 
     /**
+     * Helper to convert imageLiteral string to Image.
+     * On hardware, the shim replaces this function body entirely.
+     * In the simulator, the cast is sufficient.
+     */
+    //% shim=images::createImage
+    function _createImage(leds: string): Image {
+        return <Image><any>leds;
+    }
+
+    /**
      * Randomly turns on the specified LEDs.
      * @param leds the LEDs to randomly turn on
      */
@@ -9,9 +19,8 @@ namespace SuperLED {
     //% block="randomly turn on these LEDs"
     //% imageLiteral=1
     //% imageLiteralScale=0.6
-    //% shim=images::createImage
     export function setRandom(leds: string): void {
-        let im = <Image><any>leds;
+        let im = _createImage(leds);
         
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
