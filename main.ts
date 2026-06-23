@@ -8,6 +8,8 @@ namespace SuperLED {
     //% blockId=random_on
     //% block="randomly turn on these LEDs"
     //% imageLiteral=1
+    //% imageLiteralScale=0.6
+    //% shim=images::createImage
     export function setRandom(leds: string): void {
         let im = <Image><any>leds;
         
